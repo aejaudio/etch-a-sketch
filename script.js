@@ -15,11 +15,26 @@ function makeGrids(size){
 }
 function changeColor(){
     let squares = document.querySelectorAll(".row");
+    
     squares.forEach((div) => {
         div.addEventListener("mouseover", (event) =>{
-            event.target.style.background = "black";
+            event.target.style.background = "#" + randomColor();
+            for(let i = 0; i < 10; i++){
+            event.target.style.opacity = (i/10);
+            if(i === 10){
+                let i = 0;
+            }
+            }
+        
     });
 });
+}
+
+function randomColor(){
+    let randomBgColor = 
+        Math.floor(Math.random()*16777215).toString(16);
+        return randomBgColor;
+
 }
 function makeNewGrid(){
     let input = prompt("Enter how many squares per side")
