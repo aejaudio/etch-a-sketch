@@ -49,14 +49,11 @@
   .sketch-screen>div {
     height: auto;
     flex: 1 0 auto;
-  
-    /* make columns vertical flexboxes */
     display: flex;
     flex-direction: column;
   }
   
   .sketch-screen>div>* {
-    /* make rows evenly distributed */
     flex: 1;
   }
 #start-new{
@@ -64,9 +61,6 @@
     height: 25px;
     text-align: center;
     background-color: lightcoral;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 #button-container{
     display: flex;

@@ -41,8 +41,6 @@ function makeNewGrid(){
     const rows = document.querySelectorAll(".row");
     const columns = document.querySelectorAll(".column");
     if(input < 100){
-        
-        // console.log(input)
         rows.forEach((div) =>
             div.remove());
         columns.forEach((div) =>
